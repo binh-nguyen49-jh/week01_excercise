@@ -1,0 +1,25 @@
+.nav-link{
+    font-size: 1.74rem;
+    color: var(--white-cl);
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--md-font-size);
+}
+
+.section-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+}
+
+.footer-link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: var(--white-cl);
+}
+
+img{
+    
+}

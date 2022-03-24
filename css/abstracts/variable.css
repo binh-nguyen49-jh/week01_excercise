@@ -1,0 +1,24 @@
+:root{
+    --orange-cl: #f26522;
+    --black-cl: #282828;
+    --blue-black-cl: #323339;
+    --white-cl: #ffffff;
+    
+    --text-gray-cl: #a8b2ba;
+    --text-light-gray-cl: #b6b6b6;
+    --text-light-gray-cl: #cfcfcf;
+    --text-orange-cl: #f26522;
+    --text-dark-blue-cl: #3a4d69;
+    --text-light-blue-cl: #83969f;
+    --text-dark-purple: #494a56;
+
+    --icon-black-cl: #4d4d4d;
+    --icon-gray-cl: #707070;
+    --icon-light-gray-cl: #d8d8d8;
+    --icon-orange-cl: #f26522;
+
+    --xl-font-size: 8rem;
+    --lg-font-size: 6rem;
+    --md-font-size: 4.68rem;
+
+}
