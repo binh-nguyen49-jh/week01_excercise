@@ -1,11 +1,11 @@
 :root{
     --orange-cl: #f26522;
     --black-cl: #282828;
-    --blue-black-cl: #323339;
+    --dark-blue-cl: #323339;
     --white-cl: #ffffff;
     
     --text-gray-cl: #a8b2ba;
-    --text-light-gray-cl: #b6b6b6;
+    --text-light-grey-cl: #b6b6b6;
     --text-light-gray-cl: #cfcfcf;
     --text-orange-cl: #f26522;
     --text-dark-blue-cl: #3a4d69;
@@ -19,6 +19,28 @@
 
     --xl-font-size: 8rem;
     --lg-font-size: 6rem;
-    --md-font-size: 4.68rem;
+    --md-font-size: 3.5rem;
 
+    --body-margin-left: 210px;
+    --body-padding: 50px;
+
+    /*GRID - media queries breakpoints*/
+    --xxs-max: 481px;
+    --xs-max: 767px;
+    --sm-max: 991px;
+    --md-max: 1119px;
+    --lg-max: 1599px;
+}
+
+
+@media screen and (max-width: 991px) {
+    :root{
+        --body-margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :root{
+        --body-margin-left: 0;
+    }
 }
