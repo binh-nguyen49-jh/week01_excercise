@@ -1,4 +1,4 @@
-*{
+* {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
@@ -9,12 +9,12 @@
     -webkit-appearance: none;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-section > .container, footer > .container{
+section>.container,
+footer>.container {
     height: 100%;
     padding-left: var(--body-margin-left);
 }
-

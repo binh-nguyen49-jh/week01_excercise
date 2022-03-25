@@ -1,9 +1,9 @@
-:root{
+:root {
     --orange-cl: #f26522;
     --black-cl: #282828;
     --dark-blue-cl: #323339;
     --white-cl: #ffffff;
-    
+
     --text-gray-cl: #a8b2ba;
     --text-light-grey-cl: #b6b6b6;
     --text-light-gray-cl: #cfcfcf;
@@ -34,13 +34,13 @@
 
 
 @media screen and (max-width: 991px) {
-    :root{
+    :root {
         --body-margin-left: 80px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    :root{
+    :root {
         --body-margin-left: 0;
     }
 }

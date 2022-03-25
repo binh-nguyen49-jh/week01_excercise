@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,29 +8,29 @@ header{
     z-index: 5000000;
 }
 
-header .container{
+header .container {
     padding-left: var(--body-margin-left);
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
     display: flex;
     gap: 50px;
 }
 
-header nav a{
+header nav a {
     position: relative;
     font-family: "Raleway";
     color: var(--white-cl);
-    
+
     text-transform: uppercase;
     text-decoration: none;
 }
 
-header nav a:hover::after{
+header nav a:hover::after {
     content: "";
 
     position: absolute;
@@ -42,18 +42,19 @@ header nav a:hover::after{
     background-color: var(--orange-cl);
     font-size: 13px;
 }
+
 @media screen and (max-width: 767px) {
-    header .container{
+    header .container {
         padding-left: var(--body-padding);
-    }   
+    }
 }
 
 @media screen and (max-width: 481px) {
-    header .container{
+    header .container {
         padding-left: 30px;
     }
 
-    header nav ul{
+    header nav ul {
         gap: 20px;
     }
 }
