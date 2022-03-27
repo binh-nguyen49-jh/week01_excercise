@@ -52,13 +52,18 @@
                     <div class="content__navigator">
                         <div class="bar-icon"></div>
                         <a class="learn-more-icon" href="#">
-                            <img src="assets/long_arrow.png"></img>
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+                                <circle class="arrow-icon__circle" cx="50" cy="50" r="49" stroke="white" stroke-width="3"/>
+                                <g clip-path="url(#clip0_3_2)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9966 50.3726C19.9966 49.8754 20.1942 49.3984 20.5458 49.0468C20.8974 48.6952 21.3744 48.4976 21.8716 48.4976H66.0954L54.2941 36.7001C53.9421 36.3481 53.7443 35.8705 53.7443 35.3726C53.7443 34.8747 53.9421 34.3972 54.2941 34.0451C54.6462 33.6931 55.1237 33.4953 55.6216 33.4953C56.1196 33.4953 56.5971 33.6931 56.9491 34.0451L71.9491 49.0451C72.1238 49.2193 72.2623 49.4262 72.3568 49.654C72.4513 49.8818 72.5 50.126 72.5 50.3726C72.5 50.6193 72.4513 50.8635 72.3568 51.0913C72.2623 51.3191 72.1238 51.526 71.9491 51.7001L56.9491 66.7001C56.5971 67.0522 56.1196 67.25 55.6216 67.25C55.1237 67.25 54.6462 67.0522 54.2941 66.7001C53.9421 66.3481 53.7443 65.8706 53.7443 65.3726C53.7443 64.8747 53.9421 64.3972 54.2941 64.0451L66.0954 52.2476H21.8716C21.3744 52.2476 20.8974 52.0501 20.5458 51.6985C20.1942 51.3468 19.9966 50.8699 19.9966 50.3726Z" fill="white"/>
+                                </g>
+                            </svg>
                         </a>
                     </div>
                 </div>
                 <div class="carousel-indicator">
-                    <img src="assets/arrow.png" class="indicator__icon"></img>
-                    <img src="assets/orange_arrow.png" class="indicator__icon"></img>
+                    <img src="assets/arrow.png" class="indicator__icon --bottom"></img>
+                    <img src="assets/orange_arrow.png" class="indicator__icon --right"></img>
                 </div>
             </div>
         </section>
@@ -174,7 +179,9 @@
                     <label for="email">email</label>
                     <input type="email" id="email" placeholder="Email"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                    <input type="submit" class="btn" value="Sign Up" />
+                    <button type="submit" class="btn" value="Sign Up">
+                        <span>Sign Up</span>
+                    </button>
                 </form>
             </div>
         </section>

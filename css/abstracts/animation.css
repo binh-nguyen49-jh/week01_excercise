@@ -1,0 +1,9 @@
+@keyframes right-arrow-animation {
+    50%{
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(10px, 0) ;
+    }
+}

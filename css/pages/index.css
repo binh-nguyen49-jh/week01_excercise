@@ -1,4 +1,5 @@
 @import "../abstracts/variable.css";
+@import "../abstracts/animation.css";
 @import "../core/reset.css";
 @import "../core/base.css";
 @import "../core/elements.css";
@@ -72,15 +73,24 @@
 
 #introduction .carousel-indicator {
     position: absolute;
-    top: calc(50% + 250px);
+    bottom:  100px;
     left: var(--body-margin-left);
 
     display: flex;
-    gap: 8px;
+    gap: 12px;
 }
 
 #introduction .indicator__icon {
     cursor: pointer;
+    transition: 0.2s;
+}
+
+#introduction .indicator__icon.--right:hover {
+    animation: right-arrow-animation 1s ease-in-out 0s infinite normal backwards;
+}
+#introduction .indicator__icon.--bottom:hover {
+    transform: translate(0, 10px) scale(1.1);
+    transition: 0.2s;
 }
 
 #brightass {
@@ -308,18 +318,45 @@
     font-size: 1.2rem;
 }
 
-#form form input[type=submit] {
+#form form button[type=submit] {
+    display: block;
+    position: relative;
     width: 156px;
+    height: 60px;
     border: 2px solid white;
     background-color: transparent;
     color: white;
-    font-size: 1.5rem;
     cursor: pointer;
 }
+#form form button[type=submit] span {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+#form form button[type=submit]::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: white;
 
-#form form input[type=submit]:hover{
-    background-color: var(--white-cl);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.25s;
+    transform-origin: left center;
+}
+
+#form form button[type=submit]:hover{
     color: black;
+}
+#form form button[type=submit]:hover::before{
+    width: 100%;
+    transition: 0.25s;
+    transform-origin: right center;
 }
 
 #form form input::placeholder {
