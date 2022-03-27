@@ -73,7 +73,7 @@
 
 #introduction .carousel-indicator {
     position: absolute;
-    bottom:  100px;
+    bottom: 100px;
     left: var(--body-margin-left);
 
     display: flex;
@@ -88,6 +88,7 @@
 #introduction .indicator__icon.--right:hover {
     animation: right-arrow-animation 1s ease-in-out 0s infinite normal backwards;
 }
+
 #introduction .indicator__icon.--bottom:hover {
     transform: translate(0, 10px) scale(1.1);
     transition: 0.2s;
@@ -307,7 +308,7 @@
     gap: 8px;
 }
 
-#form form input {
+#form form input, button {
     height: 60px;
     border-radius: 3px;
     font-family: 'Montserrat';
@@ -319,8 +320,8 @@
 }
 
 #form form button[type=submit] {
-    display: block;
     position: relative;
+    
     width: 156px;
     height: 60px;
     border: 2px solid white;
@@ -328,6 +329,7 @@
     color: white;
     cursor: pointer;
 }
+
 #form form button[type=submit] span {
     z-index: 1;
     position: absolute;
@@ -336,7 +338,8 @@
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
 }
-#form form button[type=submit]::before{
+
+#form form button[type=submit]::before {
     content: "";
     height: 100%;
     width: 0%;
@@ -350,10 +353,11 @@
     transform-origin: left center;
 }
 
-#form form button[type=submit]:hover{
+#form form button[type=submit]:hover {
     color: black;
 }
-#form form button[type=submit]:hover::before{
+
+#form form button[type=submit]:hover::before {
     width: 100%;
     transition: 0.25s;
     transform-origin: right center;
@@ -387,7 +391,7 @@
 
     height: fit-content;
     padding: 0 var(--body-margin-left);
-
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -399,10 +403,10 @@
 #end .end__nice {
     grid-area: end__nice;
     background-color: var(--orange-cl);
-    padding: 70px var(--body-padding);
-
+    
     display: flex;
     flex-flow: column;
+    padding: 70px var(--body-padding);
     gap: 30px;
 }
 
@@ -431,9 +435,9 @@
 #end .end__night {
     grid-area: end__night;
 
-    padding: 85px var(--body-padding);
     display: flex;
     flex-flow: column;
+    padding: 85px var(--body-padding);
     gap: 30px;
 }
 

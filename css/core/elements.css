@@ -99,16 +99,18 @@
     transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
 }
 
-.arrow-icon{
+.arrow-icon {
     width: 48px;
     height: 48px;
 }
+
 .arrow-icon__circle {
     transition: stroke-dashoffset .3s ease;
     stroke-dasharray: 310;
     stroke-dashoffset: 310;
 }
-.arrow-icon:hover .arrow-icon__circle{
+
+.arrow-icon:hover .arrow-icon__circle {
     stroke-dashoffset: 0;
 }
 
@@ -116,7 +118,7 @@
     position: relative;
     display: inline-block;
 }
-  
+
 .tooltip__container .tooltip {
     visibility: hidden;
     width: 120px;
@@ -137,7 +139,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .toggle-btn{
+    .toggle-btn {
         display: block;
-    }   
+    }
 }

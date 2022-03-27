@@ -3,7 +3,7 @@ footer {
     background-color: var(--dark-blue-cl);
 }
 
-footer>.container {
+footer > .container {
     padding-top: 80px;
 }
 
