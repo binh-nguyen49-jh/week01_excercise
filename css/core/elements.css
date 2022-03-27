@@ -30,3 +30,78 @@
     width: 100%;
     height: 100%;
 }
+
+.toggle-btn {
+    display: none;
+    --icon-width: 30px;
+    --icon-height: 30px;
+    width: var(--icon-width);
+    height: var(--icon-height);
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+    z-index: 5000001;
+}
+
+.burger-icon {
+    --bar-height: 4px;
+    position: relative;
+    width: var(--icon-width);
+    height: var(--bar-height);
+    left: 0px;
+    top: calc(var(--icon-height) / 2);
+    background-color: var(--white-cl);
+}
+
+.burger-icon::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    transition-duration: 0.5s;
+    width: var(--icon-width);
+    height: var(--bar-height);
+    background-color: var(--white-cl);
+}
+
+.burger-icon::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    transition-duration: 0.5s;
+    width: var(--icon-width);
+    height: var(--bar-height);
+    background-color: var(--white-cl);
+}
+
+#nav__toggle {
+    display: none;
+}
+
+#nav__toggle:checked~nav {
+    visibility: visible;
+    left: 0;
+}
+
+#nav__toggle:checked~.toggle-btn .burger-icon {
+    transition-duration: 0.5s;
+    background: transparent;
+}
+
+#nav__toggle:checked~.toggle-btn .burger-icon::before {
+    transform: rotateZ(45deg) scaleX(1.25) translate(6px, 6px);
+}
+
+#nav__toggle:checked~.toggle-btn .burger-icon::after {
+    transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+}
+
+
+@media screen and (max-width: 767px) {
+    .toggle-btn{
+        display: block;
+    }   
+}
