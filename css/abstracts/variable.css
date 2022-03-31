@@ -28,12 +28,12 @@
     --xxs-max: 481px;
     --xs-max: 767px;
     --sm-max: 991px;
-    --md-max: 1119px;
+    --md-max: 1279px;
     --lg-max: 1599px;
 }
 
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1279px) {
     :root {
         --body-margin-left: 0px;
     }

@@ -236,7 +236,7 @@
 #words .container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 200px)) 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(100px, 300px)) 1fr 1fr;
     grid-template-rows: auto 1fr;
 
     height: max-content;
@@ -484,7 +484,7 @@
     }
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1279px) {
     #introduction .content,
     #introduction .carousel-indicator {
         left: var(--body-padding);
@@ -497,6 +497,7 @@
     
     #brightass>.container {
         float: none;
+        grid-template-rows: auto 1fr auto;
         grid-template-areas:
             "brightass__content brightass__content brightass__content"
             "brightass__dessert brightass__dessert brightass__dessert"
@@ -531,6 +532,7 @@
     }
 
     #end>.container {
+        grid-template-rows: auto 1fr auto;
         grid-template-areas:
             "end__nice end__nice end__nice"
             "end__img end__img end__img"
@@ -564,6 +566,9 @@
 }
 
 @media screen and (max-width: 481px) {
+    .text__container {
+        padding: 40px var(--body-padding) !important;
+    }
 
     #introduction .content,
     #introduction .carousel-indicator {

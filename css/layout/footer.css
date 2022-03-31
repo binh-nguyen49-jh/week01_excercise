@@ -49,7 +49,7 @@ a {
     color: var(--text-orange-cl);
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1279px) {
     footer>.container {
         padding: 80px var(--body-padding);
     }
