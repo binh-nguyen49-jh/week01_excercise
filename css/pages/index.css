@@ -476,6 +476,11 @@
     #introduction .carousel-indicator {
         left: var(--body-padding);
     }
+
+    #introduction .title, #words .title {
+        font-size: var(--md-font-size);
+    }
+    
     #brightass>.container {
         float: none;
         grid-template-areas:
@@ -484,21 +489,20 @@
             "brightass__finaly brightass__finaly brightass__finaly";
     }
 
-    #melbourne .title {
-        text-align: center;
+    #melbourne .container {
+        padding: 0 var(--body-padding);
     }
 
     #melbourne .section__content {
-        padding: 0 var(--body-padding);
         grid-template-columns: 1fr;
     }
 
     #words .section__title {
-        grid-area: 1/1/2/5;
+        grid-area: 1/1/2/4;
     }
 
     #words .section__img {
-        grid-area: 1/5/2/7;
+        grid-area: 1/4/2/7;
     }
 
     #form form {
