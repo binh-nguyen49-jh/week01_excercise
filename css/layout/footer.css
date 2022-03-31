@@ -42,6 +42,10 @@ a {
 }
 
 @media screen and (max-width: 1119px) {
+    footer>.container {
+        padding: 80px var(--body-padding);
+    }
+
     footer nav .container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(auto-fill, auto);
@@ -50,15 +54,9 @@ a {
     }
 }
 
-@media screen and (max-width: 767px) {
-    footer>.container {
-        padding: 80px 50px 0 50px;
-    }
-}
-
 @media screen and (max-width: 481px) {
     footer nav .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(auto-fill, auto);
 
         gap: 50px;
