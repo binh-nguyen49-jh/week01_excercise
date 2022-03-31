@@ -9,7 +9,7 @@
 #introduction {
     position: relative;
     height: 100vh;
-    background: #ffffff url("../../assets/background.jpg") no-repeat right top;
+    background: var(--white-cl) url("../../assets/background.jpg") no-repeat right top;
     background-size: cover;
 }
 
@@ -26,7 +26,7 @@
     content: "";
     height: 2px;
     width: 18px;
-    background-color: white;
+    background-color: var(--white-cl);
     position: absolute;
     left: 0;
 }
@@ -68,7 +68,7 @@
 .bar-icon {
     height: 2px;
     width: 18px;
-    background-color: white;
+    background-color: var(--white-cl);
 }
 
 #introduction .carousel-indicator {
@@ -373,7 +373,7 @@
 }
 
 #crust .container {
-    background: #ffffff url("../../assets/background_crust.jpg") no-repeat center;
+    background: var(--white-cl) url("../../assets/background_crust.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     padding: 0;
