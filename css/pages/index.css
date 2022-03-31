@@ -96,20 +96,19 @@
 
 #brightass {
     width: 100%;
-    position: relative;
+    height: 450px;
 }
 
 #brightass>.container {
     display: grid;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(0, -50%);
+    position: relative;
+    margin-top: -450px;
+    float: right;
 
     padding-left: 0;
-    width: 100%;
-    height: auto;
-    max-width: 1166px;
+    width: 75%;
+    height: 900px;
+    max-width: 1400px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
@@ -183,6 +182,7 @@
 
 #melbourne {
     margin: 40px 0;
+    clear: both;
 }
 
 #melbourne .container {
@@ -451,12 +451,18 @@
 
 
 @media screen and (max-width: 1599px) {
+    #brightass{
+        height: fit-content;
+    }
     #brightass>.container {
+        position: static;
+        margin-top: 0;
+        
         width: 100%;
-        max-width: unset;
-        transform: translate(0);
+        max-width: none;
+
         padding-left: var(--body-margin-left);
-        left: 0px;
+        height: fit-content;
     }
 
     #end>.container {
@@ -466,7 +472,12 @@
 }
 
 @media screen and (max-width: 1119px) {
+    #introduction .content,
+    #introduction .carousel-indicator {
+        left: var(--body-padding);
+    }
     #brightass>.container {
+        float: none;
         grid-template-areas:
             "brightass__content brightass__content brightass__content"
             "brightass__dessert brightass__dessert brightass__dessert"
@@ -510,12 +521,6 @@
 }
 
 @media screen and (max-width: 767px) {
-
-    #introduction .content,
-    #introduction .carousel-indicator {
-        left: var(--body-padding);
-    }
-
     #words .container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto-fill, auto);

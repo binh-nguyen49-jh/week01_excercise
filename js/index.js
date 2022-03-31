@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
         `${endContainer.getBoundingClientRect().height}px`;
     }
   }
-  resizeHeightBrightass();
+  // resizeHeightBrightass();
   resizeHeightWords();
   resizeHeightEnd();
 
   window.onresize = () => {
-    resizeHeightBrightass();
+    // resizeHeightBrightass();
     resizeHeightWords();
     resizeHeightEnd();
   }

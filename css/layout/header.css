@@ -50,6 +50,11 @@ header nav a:hover::after {
     font-size: 13px;
 }
 
+@media screen and (max-width: 1119px) {
+    header .container {
+        padding-left: var(--body-padding);
+    }
+}
 @media screen and (max-width: 767px) {
     header {
         height: 100px;
