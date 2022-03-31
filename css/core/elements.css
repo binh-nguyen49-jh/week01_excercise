@@ -7,12 +7,14 @@
 .title {
     font-family: 'Raleway', sans-serif;
     font-size: var(--md-font-size);
+    line-height: 3.9rem;
     text-transform: uppercase;
 }
 
 .description {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
+    line-height: 2.4rem;
 }
 
 .footer-link {

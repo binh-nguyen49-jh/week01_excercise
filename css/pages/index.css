@@ -49,6 +49,7 @@
 #introduction .title {
     color: var(--white-cl);
     font-size: 4.5rem;
+    line-height: 4.8rem;
     text-transform: uppercase;
     max-width: 330px;
 }
@@ -210,6 +211,8 @@
 
 #melbourne .section__content .description:first-child {
     color: var(--text-light-grey-cl);
+    font-size: 1.8rem;
+    line-height: 2.7rem;
 }
 
 #eaves {
@@ -251,6 +254,7 @@
 #words .title {
     color: var(--white-cl);
     font-size: 6rem;
+    line-height: 7rem;
 }
 
 #words .section__img {
@@ -473,6 +477,7 @@
 
     #introduction .title, #words .title {
         font-size: var(--md-font-size);
+        line-height: 3.9rem;
     }
     
     #brightass>.container {

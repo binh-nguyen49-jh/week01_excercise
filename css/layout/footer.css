@@ -7,6 +7,13 @@ footer > .container {
     padding-top: 80px;
 }
 
+footer .description {
+    line-height: 2.6rem;
+    font-size: 1.2rem;
+    color: var(--text-dark-purple);
+    margin-top: 90px;
+}
+
 footer nav .container {
     display: grid;
     width: fit-content;
@@ -23,6 +30,7 @@ footer nav .container {
 .footer-nav__list h3,
 a {
     font-size: 1.2rem;
+    line-height: 1.2rem;
     font-family: 'Montserrat';
 }
 
