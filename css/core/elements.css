@@ -17,6 +17,10 @@
     line-height: 2.4rem;
 }
 
+.max-width {
+    max-width: 1400px;
+}
+
 .footer-link {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;

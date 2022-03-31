@@ -109,9 +109,8 @@
     padding-left: 0;
     width: 75%;
     height: 900px;
-    max-width: 1400px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: minmax(450px, 1fr) minmax(450px, 1fr);
     grid-template-areas:
         "brightass__content brightass__dessert brightass__dessert"
         "brightass__content brightass__finaly brightass__finaly";
@@ -169,6 +168,8 @@
 
 .brightass__finaly .share a {
     position: relative;
+    color: var(--text-light-gray-cl);
+    line-height: 1.4rem;
 }
 
 .brightass__finaly .share a::after {
@@ -184,6 +185,10 @@
 #melbourne {
     margin: 40px 0;
     clear: both;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #melbourne .container {
@@ -229,8 +234,9 @@
 }
 
 #words .container {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, minmax(100px, 200px)) 1fr 1fr;
     grid-template-rows: auto 1fr;
 
     height: max-content;
@@ -270,7 +276,9 @@
 #words .section__content {
     grid-area: 2/1/3/7;
     background-color: var(--orange-cl);
+}
 
+#words .content__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -382,9 +390,11 @@
     background-attachment: fixed;
     padding: 0;
 }
+
 #end {
     height: 550px;
 }
+
 #end>.container {
     position: relative;
     top: -350px;
@@ -451,9 +461,14 @@
 
 
 @media screen and (max-width: 1599px) {
-    #brightass, #end{
+    #melbourne {
+        justify-content: flex-start;
+    }
+    
+    #brightass, #end {
         height: fit-content;
     }
+
     #brightass>.container, #end>.container{
         margin-top: 0;
         top: 0;
@@ -492,10 +507,10 @@
         padding: 0 var(--body-padding);
     }
 
-    #melbourne .section__content {
+    #melbourne .section__content, #words .content__container {
         grid-template-columns: 1fr;
     }
-
+    
     #words .section__title {
         grid-area: 1/1/2/4;
     }
