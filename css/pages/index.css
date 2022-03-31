@@ -378,23 +378,19 @@
     background-attachment: fixed;
     padding: 0;
 }
-
 #end {
-    position: relative;
+    height: 550px;
 }
-
 #end>.container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(0, calc(-50% + 120px));
+    position: relative;
+    top: -350px;
 
-    height: fit-content;
+    height: 900px;
     padding: 0 var(--body-margin-left);
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 450px 450px;
     grid-template-areas:
         "end__nice end__img end__img"
         "end__nice end__night end__night";
@@ -451,13 +447,12 @@
 
 
 @media screen and (max-width: 1599px) {
-    #brightass{
+    #brightass, #end{
         height: fit-content;
     }
-    #brightass>.container {
-        position: static;
+    #brightass>.container, #end>.container{
         margin-top: 0;
-        
+        top: 0;
         width: 100%;
         max-width: none;
 
@@ -466,7 +461,6 @@
     }
 
     #end>.container {
-        transform: translate(0);
         padding-right: 0;
     }
 }
@@ -521,6 +515,10 @@
             "end__nice end__nice end__nice"
             "end__img end__img end__img"
             "end__night end__night end__night";
+    }
+
+    #eaves, #crust {
+        display: none;
     }
 }
 
