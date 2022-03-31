@@ -50,4 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
     resizeHeightWords();
     resizeHeightEnd();
   }
+
+  const header = document.querySelector("header");
+  window.onscroll = () => {
+    if (window.scrollY >= header.getBoundingClientRect().height) {
+      header.classList.add("fixed");
+    } else {
+      header.classList.remove("fixed");
+    }
+  }
 })
