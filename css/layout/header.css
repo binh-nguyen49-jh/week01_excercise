@@ -93,6 +93,7 @@ header nav a:hover::after {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 30px;
       
         margin: 0;
         padding: 0px var(--body-padding);
@@ -126,5 +127,9 @@ header nav a:hover::after {
 
     header nav ul {
         gap: 40px;
+    }
+
+    header nav a{
+        font-size: 3rem;
     }
 }
