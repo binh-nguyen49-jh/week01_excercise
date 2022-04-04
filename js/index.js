@@ -24,11 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const header = document.querySelector("header");
+  const logo = document.querySelector("h1");
   window.onscroll = () => {
     if (window.scrollY >= header.getBoundingClientRect().height) {
       header.classList.add("fixed");
+      logo.classList.add("fixed");
     } else {
       header.classList.remove("fixed");
+      logo.classList.remove("fixed");
     }
   }
 })

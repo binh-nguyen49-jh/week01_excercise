@@ -28,6 +28,14 @@ header .container {
     position: absolute;
     top: 50px;
     right: 50px;
+    transition: 0.25s;
+}
+
+.logo.fixed {
+    position: fixed;
+    transform: rotateZ(-90deg) translate(calc(25% + 50px), -50px);
+    transition: 0.25s;
+    z-index: 5000001;
 }
 
 header nav ul {
@@ -62,6 +70,10 @@ header nav a:hover::after {
 @media screen and (max-width: 1279px) {
     header .container {
         padding-left: var(--body-padding);
+    }
+
+    .logo.fixed {
+        transform: rotateZ(-90deg) translate(calc(25% + 50px), calc(0px - var(--body-padding)));
     }
 }
 @media screen and (max-width: 767px) {
